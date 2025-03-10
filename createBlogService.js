@@ -2,7 +2,7 @@ require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 const Blog = require('./shared/models/Blog');
-const authenticate = require('./shared/authenticate');
+const authenticate = require('./shared/middleware/authenticate');
 
 
 const app = express();
